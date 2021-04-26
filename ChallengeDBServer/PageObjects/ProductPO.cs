@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace ChallengeDBServer.PageObjects
 {
@@ -21,10 +23,9 @@ namespace ChallengeDBServer.PageObjects
             _driver.FindElement(byAddToCartButton).Click();
         }
 
-        public void ClickProceedToCheckoutButton()//esperar para isso abrir
-        {
+        public void ClickProceedToCheckoutButton()
+        {            
             _driver.FindElement(byProceedToCheckoutButton).Click();
-        }
-        // assert SHOPPING-CART SUMMARY
+        }        
     }
 }

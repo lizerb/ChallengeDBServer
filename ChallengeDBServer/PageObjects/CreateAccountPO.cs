@@ -57,7 +57,7 @@ namespace ChallengeDBServer.PageObjects
             _driver.FindElement(byCityInput).SendKeys(city);
         }
 
-        public void InsertState(string state)   // select
+        public void SelectState(string state)   
         {
             _driver.FindElement(byStateInput).SendKeys(state);
         }
@@ -67,7 +67,7 @@ namespace ChallengeDBServer.PageObjects
             _driver.FindElement(byPostalCodeInput).SendKeys(postalCode);
         }
 
-        public void InsertCountry(string country)  // select
+        public void SelectCountry(string country)  
         {
             _driver.FindElement(byCountryInput).SendKeys(country);
         }

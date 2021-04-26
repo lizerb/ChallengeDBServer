@@ -31,7 +31,7 @@ namespace ChallengeDBServer.PageObjects
         public void ClickProceedToCheckoutAddressButton()
         {
             _driver.FindElement(byProceedToCheckoutAddressButton).Click();
-        }//assert YOUR DELIVERY ADDRESS
+        }
 
         public void ClickTermsOfServiceCheckBox()
         {
@@ -51,12 +51,6 @@ namespace ChallengeDBServer.PageObjects
         public void ClickConfirmOrderButton()
         {
             _driver.FindElement(byConfirmOrderButton).Click();
-        }
-
-        //asserts ORDER CONFIRMATION 
-        //Your order on My Store is complete.
-
-        //Please send us a bank wire with
-        //- Amount $30.16
+        }      
     }
 }
